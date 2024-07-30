@@ -1,0 +1,14 @@
+:root{
+  --green:#34C94B
+}
+.navbar {
+    background-color: var(--green);
+    height: 74px;
+    width: 95.8;
+    padding: 0px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  

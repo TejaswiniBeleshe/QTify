@@ -1,0 +1,18 @@
+:root{
+    --green:#34C94B;
+    --black:#121212;
+    --white:#FFFFFF;
+  }
+.btn{
+    border-radius: 12px;
+    background-color: var(--black);
+    color: var(--green);
+    padding: 10px 16px 10px 16px;
+    width: 170px;
+    height: 47px;
+    border: 1px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}

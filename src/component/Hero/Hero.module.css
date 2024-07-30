@@ -1,0 +1,17 @@
+:root{
+  --green:#34C94B;
+  --black:#121212;
+  --white:#FFFFFF;
+}
+.hero {
+    background-color:var(--black);
+    height: 270px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    color: var(--white);
+  }
+  
