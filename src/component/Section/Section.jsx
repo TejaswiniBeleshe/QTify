@@ -4,10 +4,10 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import { purple } from "@mui/material/colors";
 import CardCompo from "../Card/Card";
-import useFetch from "../customFetch/UseFetch";
+
 import axios from 'axios';
 
-function Section({l,r,url}){
+function Section({l,r,url,setCheck='',check=''}){
     let [data,setData] = useState([]);
     const fetchData = async()=>{
         try{
@@ -29,8 +29,9 @@ function Section({l,r,url}){
         <Box sx={{padding:2}}>
             <Stack spacing={{ xs: 1, sm: 2 }} direction="row" justifyContent="space-between">
             <Typography sx={{color:'white',paddingTop:1}}>{l}</Typography>
-            
-            <Button sx={{color:'#34C94B',textTransform:'capitalize',fontSize:17}}>{r}</Button>
+            {
+                l==='New Albums'?<Button sx={{color:'#34C94B',textTransform:'capitalize',fontSize:17}} onClick={()=>setCheck((prev)=>!prev)}>{check?'Collapse':'Show all'}</Button>:<Button sx={{color:'#34C94B',textTransform:'capitalize',fontSize:17}} >{l}</Button>
+            }
             </Stack>
         <Grid container spacing={5} sx={{padding:1}} >
             {
