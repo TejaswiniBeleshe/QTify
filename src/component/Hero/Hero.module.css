@@ -4,7 +4,7 @@
   --white:#FFFFFF;
 }
 .hero {
-    background-color:var(--black);
+    /* background-color:var(--black); */
     height: 270px;
     width: 100%;
     display: flex;

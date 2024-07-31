@@ -1,0 +1,27 @@
+:root{
+    --green:#34C94B;
+    --black:#121212;
+    --white:#FFFFFF;
+  }
+.main{
+    /* position: relative; */
+    background-color: white;
+}
+.chip{
+    /* position: absolute; */
+    width:Hug(71px);
+    height: Hug(23px);
+    background-color: var(--black) !important;
+    color: var(--white) !important;
+    padding: 4px 8px 4px 8px;
+    /* gap: 1px; */
+    /* border-radius: 10px 0px 0px 0px; */
+}
+.card{
+    width: Hug (159px)px;
+    height: Hug (232px)px;
+    border-radius: 12px 12px 0 0 !important;
+}
+    
+
+
