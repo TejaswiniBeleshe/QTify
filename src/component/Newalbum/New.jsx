@@ -3,7 +3,7 @@ import {Box} from '@mui/material';
 import Section from "../Section/Section";
 function New(){
     return(
-        <Section l="New Album" r="collapse"/>
+        <Section l="New Album" r="collapse" url="https://qtify-backend-labs.crio.do/albums/new"/>
     )
 
 }

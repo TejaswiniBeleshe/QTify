@@ -7,11 +7,11 @@ import CardCompo from "../Card/Card";
 import useFetch from "../customFetch/UseFetch";
 import axios from 'axios';
 
-function Section({l,r}){
+function Section({l,r,url}){
     let [data,setData] = useState([]);
     const fetchData = async()=>{
         try{
-           let respo = await axios.get('https://qtify-backend-labs.crio.do/albums/top');
+           let respo = await axios.get(url);
            let data = respo.data;
            setData(data);
            console.log(data)
