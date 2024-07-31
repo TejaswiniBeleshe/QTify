@@ -7,7 +7,7 @@ import CardCompo from "../Card/Card";
 import useFetch from "../customFetch/UseFetch";
 import axios from 'axios';
 
-function Section(){
+function Section({l,r}){
     let [data,setData] = useState([]);
     const fetchData = async()=>{
         try{
@@ -28,11 +28,11 @@ function Section(){
     return(
         <Box sx={{padding:2}}>
             <Stack spacing={{ xs: 1, sm: 2 }} direction="row" justifyContent="space-between">
-            <Typography sx={{color:'white',paddingTop:1}}>Top Albums</Typography>
+            <Typography sx={{color:'white',paddingTop:1}}>{l}</Typography>
             
-            <Button sx={{color:'#34C94B',textTransform:'capitalize',fontSize:17}}>Collapse</Button>
-      </Stack>
-        <Grid container spacing={5} sx={{border:'1px solid red',padding:1}} >
+            <Button sx={{color:'#34C94B',textTransform:'capitalize',fontSize:17}}>{r}</Button>
+            </Stack>
+        <Grid container spacing={5} sx={{padding:1}} >
             {
                 data.map((ele)=>{
                     return <Grid item xs={6} sm={1.7} key={ele.id}>
