@@ -30,7 +30,7 @@ function Section({l,r,url,setCheck='',check=''}){
             <Stack spacing={{ xs: 1, sm: 2 }} direction="row" justifyContent="space-between">
             <Typography sx={{color:'white',paddingTop:1}}>{l}</Typography>
             {
-                l==='New Albums'?<Button sx={{color:'#34C94B',textTransform:'capitalize',fontSize:17}} onClick={()=>setCheck((prev)=>!prev)}>{check?'Collapse':'Show all'}</Button>:<Button sx={{color:'#34C94B',textTransform:'capitalize',fontSize:17}} >{l}</Button>
+                l==='New Albums'?<Button sx={{color:'#34C94B',textTransform:'capitalize',fontSize:17}} onClick={()=>setCheck((prev)=>!prev)}>{check?'Collapse':'Show all'}</Button>:<Button sx={{color:'#34C94B',textTransform:'capitalize',fontSize:17}} >{r}</Button>
             }
             </Stack>
         <Grid container spacing={5} sx={{padding:1}} >

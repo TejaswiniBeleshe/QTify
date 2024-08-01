@@ -42,10 +42,7 @@ export default function Swipe(){
     },[respo])
   return (
     <> 
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+    
       {check?
       <Section l="New Albums" r="collapse" url="https://qtify-backend-labs.crio.do/albums/new"  setCheck={setCheck} check={check}/>
       :
