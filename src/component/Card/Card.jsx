@@ -18,7 +18,7 @@ function CardCompo({ele}){
           alt="green iguana"
         />
         <CardActions sx={{height:30,borderEndStartRadius:12,borderEndEndRadius:12}} className={styles.main} >
-           <Chip label={`${follows} follows`} className={styles.chip}/>
+           <Chip label={ele.likes?`${ele.likes} Likes`:`${follows} follows`} className={styles.chip}/>
         </CardActions>
        </CardActionArea>
        <CardActions>

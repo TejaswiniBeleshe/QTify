@@ -20,9 +20,10 @@ function App() {
       <Top/>
        <Divider sx={{borderColor:'#34C94B'}}/>
       <New/>
-     
-    </div>
+      <Divider sx={{borderColor:'#34C94B'}}/>
     <Songs/>
+    </div>
+    
     </>
   );
 }
