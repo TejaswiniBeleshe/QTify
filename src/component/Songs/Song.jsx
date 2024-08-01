@@ -10,7 +10,7 @@ import { Card, Grid ,Stack,Typography} from '@mui/material';
 import CardCompo from '../Card/Card';
 
 export default function Songs(){
-  const [value, setValue] = React.useState('blues');
+  const [value, setValue] = React.useState('all');
   const [respo,setRespo] = React.useState([]);
   // const [t2,setT2] = useState([]);
   // const [t3,setT3] = useState([]);
